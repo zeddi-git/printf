@@ -56,7 +56,7 @@ int print_percent(va_list args __attribute__((unused)))
  * @str: string input
  * Return: string
  */
-void _puts(char *str)
+int _puts(char *str, int)
 {
 	int i;
 

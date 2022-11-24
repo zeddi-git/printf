@@ -10,7 +10,7 @@ int _printf(const char *format, ...);
 int print_char(va_list args);
 int print_str(va_list args);
 int print_percent(va_list args __attribute__((unused)));
-void _puts(char *str)
+int _puts(char *str, int);
 
 /**
  * _putchar - writes the character c which is the character to print
