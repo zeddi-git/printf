@@ -13,8 +13,6 @@ int (*get_op(const char c))(va_list)
 	flags_p fp[] = {
 		{"c", print_char},
 		{"s", print_str},
-		{"i", print_nbr},
-		{"d", print_nbr},
 		{"%", print_percent}
 	};
 	while (i < 14)
