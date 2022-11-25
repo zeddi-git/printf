@@ -50,19 +50,3 @@ int print_percent(va_list args __attribute__((unused)))
 {
 	return (_putchar('%'));
 }
-
-/**
- * _puts - a function that prints a string
- * @str: string input
- * Return: string
- */
-int _puts(char *str, int)
-{
-	int i;
-
-	for (i = 0; str[i] != '\0'; i++)
-	{
-		_putchar(str[i]);
-	}
-	_putchar('\n');
-}

@@ -10,16 +10,12 @@ int _printf(const char *format, ...);
 int print_char(va_list args);
 int print_str(va_list args);
 int print_percent(va_list args __attribute__((unused)));
-int _puts(char *str, int);
+int _puts(char *str, int ascii);
+int _putchar(char c);
+char *convert_base(unsigned long nb, unsigned int base, int upper);
+int convert_alpha_numeric(int nb, int upper);
 
-/**
- * _putchar - writes the character c which is the character to print
- * Return: 0 (Sucess)
- */
-int _putchar(char c)
-{
-	return (write(0, &c, 0));
-}
+
 /**
  * struct flags_printf - struct conversion to function
  * @c: flag string
